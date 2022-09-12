@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Price">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#771E1E"
+        android:textSize="@dimen/_20sdp"
+        android:text="Order" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_270sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/p3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:textColor="#FFFF"
+        android:textSize="@dimen/_30sdp"
+        android:layout_weight="2"
+        android:text=" 150" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="#FFFF"
+        android:textSize="@dimen/_30sdp"
+        android:text="السعر : " />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_25sdp"
+        android:background="@drawable/shape"
+        android:text="أطلب" />
+</LinearLayout>
+</FrameLayout>

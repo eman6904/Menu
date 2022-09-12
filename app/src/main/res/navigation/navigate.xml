@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigate"
+    app:startDestination="@id/welcome">
+
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.example.menu.Welcome"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcome_to_mainMenu"
+            app:destination="@id/mainMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.example.menu.MainMenu_recycler"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/mainmenu_recycler" >
+        <action
+            android:id="@+id/action_mainMenu_to_subMenu"
+            app:destination="@id/subMenu" />
+        <action
+            android:id="@+id/action_mainMenu_to_price"
+            app:destination="@id/price" />
+    </fragment>
+    <fragment
+        android:id="@+id/subMenu"
+        android:name="com.example.menu.SubMenu"
+        android:label="fragment_sub_menu"
+        tools:layout="@layout/fragment_sub_menu" >
+        <action
+            android:id="@+id/action_subMenu_to_price"
+            app:destination="@id/price" />
+    </fragment>
+    <fragment
+        android:id="@+id/price"
+        android:name="com.example.menu.Price"
+        android:label="fragment_price"
+        tools:layout="@layout/fragment_price" >
+        <action
+            android:id="@+id/action_price_to_order_Fragment"
+            app:destination="@id/order_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/order_Fragment"
+        android:name="com.example.menu.Order_Fragment"
+        android:label="fragment_order_"
+        tools:layout="@layout/fragment_order_" />
+</navigation>
