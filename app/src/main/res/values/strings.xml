@@ -10,4 +10,8 @@
     <string name="Drinks">مشروبات</string>
     <string name="fries">مقليات</string>
     <string name="bakery">مخبوزات</string>
+    <string name="text1">لمعرفة مقادير هذه الاكلة وكيف يتم تحضيرها وما تحتويه اضغط ع الرابط التالي:</string>
+    <string name="enter_here">أضغط هنا</string>
+    <string name="order">أطلب</string>
+    <string name="enter">👈أضغط هنا</string>
 </resources>

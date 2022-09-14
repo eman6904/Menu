@@ -1,5 +1,7 @@
 package com.example.menu
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -20,11 +22,17 @@ class Price : Fragment(R.layout.fragment_price) {
         binding = FragmentPriceBinding.bind(view)
         navController = Navigation.findNavController(view)
 
+        //to open link
+        fun link(s:String) {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(s))
+            startActivity(intent)
+        }
         //to hide action bar
         val activity = activity as MainActivity
         activity.supportActionBar?.hide()
 
         val p=imagesgroub()
+        val p2=linksgroup()
         val text=arguments?.getString("text")
         binding.textView9.text=text
         var idx=arguments?.getInt("pos")
@@ -34,14 +42,18 @@ class Price : Fragment(R.layout.fragment_price) {
             0->
             {
                 p.imagechecken()
+                p2.setchicken()
                 binding.imageView2.setImageResource(p.arr[idx!!].first)
                 binding.textView3.text=p.arr[idx!!].second.toString()
+               binding.link.setOnClickListener(){ link(p2.arr[idx!!])}
             }
             6->
             {
                 p.imagemcrona()
+                p2.setmacrona()
                 binding.imageView2.setImageResource(p.arr[idx!!].first)
                 binding.textView3.text=p.arr[idx!!].second.toString()
+                binding.link.setOnClickListener(){ link(p2.arr[idx!!])}
             }
         }
         binding.textView5.setOnClickListener()

@@ -12,7 +12,7 @@ class array_group {
         arr.add(MainMenuClass("شاورما الدجاج"))
         arr.add(MainMenuClass("كورما الدجاج الهندي للرجيم"))
         arr.add(MainMenuClass("ناجتس الدجاج المقرمش"))
-        arr.add(MainMenuClass("ناجتس الدجاج المقرمش"))
+        arr.add(MainMenuClass("أجنحة دجاج"))
         arr.add(MainMenuClass("دجاج مشوي"))
     }
     fun setmcrona()
